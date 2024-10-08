@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+
+    <meta name="description"
+        content="Viaja a través de tus melodías favoritas y transforma tu hogar en un santuario musical. ¡Descubre la música para cada estado de ánimo y déjate llevar por el ritmo de la vida!">
+
+    <meta name="keywords"
+        content="Música sin anuncios, Reproductor de música con carátulas, Música para relajarse, Música para estudiar, Reproductor de música con radio, Reproductor de música con podcast, Música para hacer ejercicio, Reproductor de música con sincronización, Reproductor de música con control por voz, Música para fiestas, Reproductor de música con efectos de sonido, Música para meditar, Reproductor de música con integración social, Música para niños, Reproductor de música con recomendaciones, Música de fondo, Reproductor de música con temporizador, Música para concentrarse, Reproductor de música con soporte de múltiples formatos, Música para viajar, Reproductor de música con interfaz intuitiva, Música para dormir, Reproductor de música con compatibilidad con dispositivos, Música para eventos, Reproductor de música con opción de compartir, Música para el hogar, Reproductor de música con actualizaciones regulares, Música para cada estado de ánimo">
+
+    <title>EcoBeat</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+
+            <img src="/Logo.png">
+
+            <div class="busc">
+
+               
+
+                    <form action="https://api.institutoalfa.org/api/songs?query=:query">
+                        <img src="/home.png" onclick="window.location.reload()">
+                        <input type="text" name="query" id="" value="">
+                        <button type="submit"><img src="/search.png">Que quieres escuchar?</button>
+                    </form>
+
+                
+            </div>
+
+            <div class="user">
+
+                <button class="uno">Sign up</button>
+                <button class="dos">Log in</button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <aside class="libreria">
+
+            <aside class="one">
+
+                <div>
+
+                    <button class="tu-libreria"><img src="/libreria.png"> Tu libreria</button>
+                    <button class="pluss"><img src="/plus.png"></button>
+
+                </div>
+
+                <section class="crearplaylist">
+                    <div>
+
+                        <h1>Crea tu primer playlist</h1>
+                        <button>Crear playlist</button>
+
+                    </div>
+                </section>
+
+            </aside>
+          
+            <section class="two">
+                <footer>
+
+                    <h3>EcoBeat</h3>
+                    <ul class="redsocial">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>LinkedIN</li>
+                    </ul>
+                    <p>Todos los derechos reservados</p>
+                    
+                </footer>
+            </section>
+        </aside>
+
+        <section class="musicas">
+
+            <div class="musicmain">
+
+                <h2>Artistas Populares</h2>
+
+                <!-- Div Padre - Contenedor de los artistas -->
+                <div id="artistaspopulares">
+                    <!-- Lista de artistas populares -->
+                </div>
+
+                <h3>Albums Populares</h3>
+
+                <!-- Div Padre - Contenedor de los albums -->
+                <div id="albumpopular">
+                    <!-- Lista de albums populares -->
+                </div>
+
+                <h4>EcoBeat playlist</h4>
+
+                <!-- Div Padre - Contenedor de las canciones -->
+                <div id="listamusical">
+                    <!-- Lista de mis musicas -->
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
+

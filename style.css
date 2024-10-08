@@ -1,0 +1,277 @@
+:root {
+    --margin-page: 60px;
+    --color-primary: #0D0D0D ;
+    --color-star: #262626 ;
+    --color-lettersone: #595959 ;
+    --color-action: #8C8C8C ;
+    --color-letters: #D9D9D9 ;
+}
+
+@font-face {
+    font-family: text;
+    src: url(/Roboto-Bold.ttf);
+}
+
+* {
+    padding: unset;
+    margin: unset;
+    border: unset;
+    outline: unset;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+body{
+    color: var(--color-primary);
+    background-color: var(--color-primary);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0D0D;
+    padding: 10px var(--margin-page);
+}
+
+.busc {
+    background-color: #0D0D0D;
+    padding: 10px var(--margin-page);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.busc img {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.menu form {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.menu button {
+    font-family: text;
+    font-size: 17px;
+    font-weight: bold;
+    align-items: center;
+    color: #0D0D0D;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    height: 10px;
+    gap: 10px;
+}
+
+.menu form input {
+    /* background-color: transparent; */
+    color: #0D0D0D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0D0D0D;
+    font-size: 14px;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30px;
+}
+
+
+.uno {
+    font-family: text;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #D9D9D9;
+    display: flex;
+    height: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0D0D0D;
+}
+
+.dos {
+    font-family: text;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #0D0D0D;
+    display: flex;
+    height: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.libreria {
+    font-family: text;
+    align-items: flex-start;
+    padding: 30px var(--margin-page);
+    border-radius: 10px;
+    width: 40%;
+}
+
+.one {
+    background-color: #262626;
+    padding: 30px var(--margin-page);
+    gap: 50px;
+    justify-content: center;
+    border-radius: 10px;
+    height: auto;
+    width: 30%;
+}
+
+
+
+.tu-libreria {
+    background-color: #262626;
+    color: #D9D9D9;
+    font-family: text;
+}
+
+.pluss {
+    background-color: #262626;
+    padding: 50px;
+}
+
+.crearplaylist {
+    background-color: #595959;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 30px;
+    gap: 50px;
+}
+
+.crearplaylist div {
+    justify-content: center;
+    align-items: center;
+}
+
+.crearplaylist h1 {
+    font-family: text;
+    font-size: 16px;
+    font-weight: bold;
+    color: #D9D9D9;
+}
+
+.crearplaylist button {
+    font-family: text;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0D0D0D;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.two {
+    background-color: #262626;
+    padding: 30px var(--margin-page);
+    gap: 50px;
+    justify-content: center;
+    border-radius: 10px;
+    height: auto;
+    width: 30%;
+}
+
+.two h3 {
+    font-family: text;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D9D9D9;
+}
+
+.two ul {
+    font-family: text;
+    font-size: 12px;
+    color: #D9D9D9;
+    padding: 5px;
+}
+
+.two li {
+    font-family: text;
+    font-size: 12px;
+    color: #D9D9D9;
+    padding: 5px;
+    padding-top: 60px;
+}
+
+.two p {
+    font-family: text;
+    font-size: 12px;
+    color: #D9D9D9;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.musicas{
+    background-color: #595959;
+    padding: 30px var(--margin-page);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 10px;
+    background-position: flex-end;
+    margin: var(--margin-page);
+    border-radius: 10px;
+}
+
+.musicmain {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-position: flex-end;
+    padding: 30px var(--margin-page);
+    gap: 65px;
+}
+
+.musicmain h2, h3, h4 {
+    font-family: text;
+    font-size: 17px;
+    font-weight: bold;
+    color: #D9D9D9;
+    display: flex;
+}
+
+.musicmain p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #D9D9D9;
+    padding-top: 10px;
+}
+
+main {
+    display: inline-flex;
+    padding: 30px var(--margin-page);
+}
