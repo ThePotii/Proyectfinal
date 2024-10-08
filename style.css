@@ -133,25 +133,69 @@ body{
     background-color: #D9D9D9;
 }
 
+
+
 .libreria {
     font-family: text;
     align-items: flex-start;
-    padding: 30px var(--margin-page);
+
+    /* ya dejas padding en el main */
+    /* padding: 30px var(--margin-page); */
     border-radius: 10px;
-    width: 40%;
+    /* width: 40%; */
 }
 
-.one {
+.libreria .one {
     background-color: #262626;
     padding: 30px var(--margin-page);
     gap: 50px;
     justify-content: center;
     border-radius: 10px;
     height: auto;
-    width: 30%;
+    /* width: 30%; */
 }
 
+.libreria .two {
+    background-color: #262626;
+    padding: 30px var(--margin-page);
+    gap: 50px;
+    justify-content: center;
+    border-radius: 10px;
+    height: auto;
 
+    /* Ahora esto sería el 30% del 40% de la pagina */
+    /* width: 30%; */
+}
+
+.libreria .two h3 {
+    font-family: text;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D9D9D9;
+}
+
+.libreria .two ul {
+    font-family: text;
+    font-size: 12px;
+    color: #D9D9D9;
+    padding: 5px;
+}
+
+.libreria .two li {
+    font-family: text;
+    font-size: 12px;
+    color: #D9D9D9;
+    padding: 5px;
+    padding-top: 60px;
+}
+
+.libreria .two p {
+    font-family: text;
+    font-size: 12px;
+    color: #D9D9D9;
+    text-align: center;
+    padding-top: 60px;
+}
 
 .tu-libreria {
     background-color: #262626;
@@ -194,65 +238,26 @@ body{
     border-radius: 10px;
 }
 
-.two {
-    background-color: #262626;
-    padding: 30px var(--margin-page);
-    gap: 50px;
-    justify-content: center;
-    border-radius: 10px;
-    height: auto;
-    width: 30%;
-}
 
-.two h3 {
-    font-family: text;
-    font-size: 24px;
-    font-weight: bold;
-    color: #D9D9D9;
-}
-
-.two ul {
-    font-family: text;
-    font-size: 12px;
-    color: #D9D9D9;
-    padding: 5px;
-}
-
-.two li {
-    font-family: text;
-    font-size: 12px;
-    color: #D9D9D9;
-    padding: 5px;
-    padding-top: 60px;
-}
-
-.two p {
-    font-family: text;
-    font-size: 12px;
-    color: #D9D9D9;
-    text-align: center;
-    padding-top: 60px;
-}
 
 .musicas{
     background-color: #595959;
-    padding: 30px var(--margin-page);
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding: 30px;
     gap: 10px;
     background-position: flex-end;
-    margin: var(--margin-page);
+    /* margin: var(--margin-page); */
     border-radius: 10px;
+    flex-grow: 1;
 }
 
 .musicmain {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: column;
+    /* flex-direction: column; */
     background-position: flex-end;
-    padding: 30px var(--margin-page);
+    padding: 30px 0;
     gap: 65px;
 }
 
@@ -272,6 +277,26 @@ body{
 }
 
 main {
-    display: inline-flex;
+    display: flex;
     padding: 30px var(--margin-page);
+}
+
+#listamusical {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 10px;
+}
+
+
+/* Aquí los estilos de las canciones */
+.song {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d0d0d54;
+    padding: 15px;
+}
+.song img {
+    height: 230px;
 }
