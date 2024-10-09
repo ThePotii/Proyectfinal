@@ -1,0 +1,348 @@
+:root {
+    --margin-page: 60px;
+    --color-primary: #0D0D0D ;
+    --color-star: #262626 ;
+    --color-lettersone: #595959 ;
+    --color-action: #8C8C8C ;
+    --color-letters: #D9D9D9 ;
+}
+
+@font-face {
+    font-family: text;
+    src: url(/Roboto-Bold.ttf);
+}
+
+* {
+    padding: unset;
+    margin: unset;
+    border: unset;
+    outline: unset;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+body{
+    color: var(--color-primary);
+    background-color: var(--color-primary);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0D0D;
+    padding: 10px var(--margin-page);
+}
+
+.busc {
+    background-color: #0D0D0D;
+    padding: 10px var(--margin-page);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.busc img {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.menu form {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+.menu button {
+    font-family: text;
+    font-size: 17px;
+    font-weight: bold;
+    align-items: center;
+    color: #0D0D0D;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    height: 10px;
+    gap: 10px;
+    transition: background .3s ease-in-out;
+}
+
+.menu button:hover {
+    background-color: #8C8C8C;
+}
+
+.menu input {
+    background-color: transparent;
+    color: #0D0D0D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0D0D0D;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    height: 10px;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.user .uno {
+    font-family: text;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+    color: #D9D9D9;
+    display: flex;
+    height: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0D0D0D;
+}
+
+.dos {
+    font-family: text;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+    color: #0D0D0D;
+    display: flex;
+    height: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    transition: background .3s ease-in-out;
+}
+
+.dos:hover {
+    background-color: #8C8C8C;
+}
+
+.libreria {
+    font-family: text;
+    display:flex ; flex-direction: column;
+    gap: 10px;
+
+    /* ya dejas padding en el main */
+    border-radius: 10px;
+}
+
+.libreria .one {
+    background-color: #262626;
+    padding: 20px;
+    gap: 50px;
+    justify-content: center;
+    border-radius: 10px;
+    height: auto;
+}
+
+.libreria .two {
+    background-color: #262626;
+    padding: 20px;
+    gap: 50px;
+    justify-content: center;
+    border-radius: 10px;
+    height: auto;
+
+    /* Ahora esto sería el 30% del 40% de la pagina */
+}
+
+.libreria .two h3 {
+    font-family: text;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D9D9D9;
+}
+
+.libreria .two ul {
+    font-family: text;
+    font-size: 12px;
+    color: #D9D9D9;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.libreria .two li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: #D9D9D9;
+    padding: 5px;
+}
+
+.two footer {
+
+}
+.libreria .two p {
+    font-family: text;
+    font-size: 12px;
+    color: #D9D9D9;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.tu-libreria {
+    background-color: #262626;
+    color: #D9D9D9;
+    font-family: text;
+}
+
+.pluss {
+    background-color: #262626;
+    /* padding: 50px; */
+    justify-content: space-around;
+}
+
+.crearplaylist {
+    background-color: #595959;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 30px;
+    gap: 50px;
+}
+
+.crearplaylist div {
+    justify-content: center;
+    align-items: center;
+}
+
+.crearplaylist h1 {
+    font-family: text;
+    font-size: 16px;
+    font-weight: bold;
+    color: #D9D9D9;
+}
+
+.crearplaylist button {
+    font-family: text;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0D0D0D;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background .3s ease-in-out;
+}
+
+.crearplaylist button:hover {
+    background-color: #8C8C8C;
+}
+
+.musicas{
+    background-color: #595959;
+    padding: 30px;
+    gap: 10px;
+    background-position: flex-end;
+    border-radius: 10px;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #8C8C8C;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.musicmain {
+    /* display: flex; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-position: flex-end;
+    padding: 10px 0;
+    gap: 65px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    /* gap: 10px; */
+}
+
+.musicmain h2, h3, h4 {
+    font-family: text;
+    font-size: 17px;
+    font-weight: bold;
+    color: #D9D9D9;
+    display: flex;
+}
+
+.musicmain p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #D9D9D9;
+    padding-top: 10px;
+}
+
+main {
+    display: flex;
+    gap: 10px;
+    padding: 30px var(--margin-page);
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#listamusical {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 10px;
+
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+/* #albumpopular {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 10px;
+} */
+
+/* #artistaspopulares {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 10px;
+} */
+
+
+/* Aquí los estilos de las canciones */
+.song {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #0d0d0d54;
+    padding: 15px;
+}
+
+.song img {
+    height: 230px;
+    border-radius: 10px;
+}
