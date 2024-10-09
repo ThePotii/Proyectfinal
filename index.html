@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
 
     <title>EcoBeat</title>
 </head>
+
 <body>
     <header>
         <nav class="menu">
@@ -24,15 +26,17 @@
 
             <div class="busc">
 
-               
-                <img src="/home.png" onclick="window.location.reload()">
+                <button>
+                    <img src="/home.png" onclick="window.location.reload()">
 
-                    <form action="https://api.institutoalfa.org/api/songs?query=:query">
-                        <input type="text" name="query" id="" value="">
-                        <button type="submit"><img src="/search.png">Que quieres escuchar?</button>
-                    </form>
+                </button>
 
-                
+                <form action="https://api.institutoalfa.org/api/songs?query=:query">
+                    <!-- <button type="submit"><img src="/search.png"></button> -->
+                    <input type="text" name="query" id="" value="" placeholder="Que quieres escuchar?">
+                </form>
+
+
             </div>
 
             <div class="user">
@@ -68,7 +72,7 @@
                 </section>
 
             </aside>
-          
+
             <section class="two">
                 <footer>
 
@@ -79,7 +83,7 @@
                         <li>LinkedIN</li>
                     </ul>
                     <p>Todos los derechos reservados</p>
-                    
+
                 </footer>
             </section>
         </aside>
@@ -88,29 +92,29 @@
 
             <div class="musicmain">
 
-                <h2>Artistas Populares</h2>
-
-                <!-- Div Padre - Contenedor de los artistas -->
-                <div id="artistaspopulares">
-                    <!-- Lista de artistas populares -->
-                </div>
-
-                <h3>Albums Populares</h3>
-
-                <!-- Div Padre - Contenedor de los albums -->
-                <div id="albumpopular">
-                    <!-- Lista de albums populares -->
-                </div>
-
                 <h4>EcoBeat playlist</h4>
 
-                
+
             </div>
             <!-- Div Padre - Contenedor de las canciones -->
             <div id="listamusical">
                 <!-- Lista de mis musicas -->
             </div>
-            
+            <!-- <h2>Artistas Populares</h2> -->
+
+            <!-- Div Padre - Contenedor de los artistas -->
+            <!-- <div id="artistaspopulares"> -->
+            <!-- Lista de artistas populares -->
+            <!-- </div> -->
+
+            <!-- <h3>Albums Populares</h3> -->
+
+            <!-- Div Padre - Contenedor de los albums -->
+            <!-- <div id="albumpopular"> -->
+            <!-- Lista de albums populares -->
+            <!-- </div> -->
+
+
         </aside>
 
     </main>
@@ -118,5 +122,5 @@
     <script src="/script.js"></script>
 
 </body>
-</html>
 
+</html>

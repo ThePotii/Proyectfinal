@@ -31,15 +31,13 @@ header {
     z-index: 50;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-}
-
 body{
     color: var(--color-primary);
     background-color: var(--color-primary);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu {
@@ -55,6 +53,8 @@ body{
     padding: 10px var(--margin-page);
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    display: flex;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
 }
@@ -63,7 +63,6 @@ body{
     width: 24px;
     height: 24px;
     display: flex;
-    background-color: #D9D9D9;
     border-radius: 10px;
 }
 
@@ -71,7 +70,9 @@ body{
     display: flex;
     align-content: space-between;
     justify-content: space-between;
-    gap: 10px;
+    
+    background-color: #fafafa;
+    border-radius: 10px;
 }
 
 .menu button {
@@ -85,10 +86,15 @@ body{
     border-radius: 10px;
     height: 10px;
     gap: 10px;
+    transition: background .3s ease-in-out;
+}
+
+.menu button:hover {
+    background-color: #8C8C8C;
 }
 
 .menu input {
-    /* background-color: transparent; */
+    background-color: transparent;
     color: #0D0D0D;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #0D0D0D;
@@ -99,6 +105,7 @@ body{
     border-radius: 10px;
     height: 10px;
     gap: 10px;
+    font-weight: bold;
 }
 
 .user {
@@ -134,13 +141,17 @@ body{
     padding: 20px;
     border-radius: 10px;
     background-color: #D9D9D9;
+    transition: background .3s ease-in-out;
 }
 
-
+.dos:hover {
+    background-color: #8C8C8C;
+}
 
 .libreria {
     font-family: text;
-    align-items: flex-start;
+    display:flex ; flex-direction: column;
+    gap: 10px;
 
     /* ya dejas padding en el main */
     border-radius: 10px;
@@ -148,7 +159,7 @@ body{
 
 .libreria .one {
     background-color: #262626;
-    padding: 30px var(--margin-page);
+    padding: 20px;
     gap: 50px;
     justify-content: center;
     border-radius: 10px;
@@ -157,7 +168,7 @@ body{
 
 .libreria .two {
     background-color: #262626;
-    padding: 30px var(--margin-page);
+    padding: 20px;
     gap: 50px;
     justify-content: center;
     border-radius: 10px;
@@ -178,16 +189,21 @@ body{
     font-size: 12px;
     color: #D9D9D9;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .libreria .two li {
-    font-family: text;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
     color: #D9D9D9;
     padding: 5px;
-    padding-top: 60px;
 }
 
+.two footer {
+
+}
 .libreria .two p {
     font-family: text;
     font-size: 12px;
@@ -236,9 +252,12 @@ body{
     align-items: center;
     padding: 10px;
     border-radius: 10px;
+    transition: background .3s ease-in-out;
 }
 
-
+.crearplaylist button:hover {
+    background-color: #8C8C8C;
+}
 
 .musicas{
     background-color: #595959;
@@ -247,6 +266,12 @@ body{
     background-position: flex-end;
     border-radius: 10px;
     flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #8C8C8C;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .musicmain {
@@ -254,7 +279,7 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     background-position: flex-end;
-    padding: 30px 0;
+    padding: 10px 0;
     gap: 65px;
 
     display: grid;
@@ -279,26 +304,32 @@ body{
 
 main {
     display: flex;
+    gap: 10px;
     padding: 30px var(--margin-page);
+    flex-grow: 1;
+    overflow: hidden;
 }
 
 #listamusical {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 10px;
+
+    flex-grow: 1;
+    overflow-y: scroll;
 }
 
-#albumpopular {
+/* #albumpopular {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 10px;
-}
+} */
 
-#artistaspopulares {
+/* #artistaspopulares {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 10px;
-}
+} */
 
 
 /* Aquí los estilos de las canciones */
